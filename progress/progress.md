@@ -2,13 +2,13 @@
 
 ## Latest
 
-- 2026-06-23: GitHub Pages公開用のリポジトリ構成を作成中。
+- 2026-06-23: GitHub Pages公開用リポジトリを作成し、公開URLの`200 OK`応答を確認済み。
 
 ## Status
 
 - Static game file: `index.html`
 - Publish target: GitHub Pages
-- Current phase: initial repository setup
+- Current phase: published
 
 ## Logs
 
