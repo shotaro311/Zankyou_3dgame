@@ -19,3 +19,6 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - GitHub Pages build status: `built`
 - 公開URL: `https://shotaro311.github.io/Zankyou_3dgame/`
 - 公開URL応答: `200 OK`
+- Playwright確認: desktop / mobileで`canvas`を1件検出、開始画面と導入シナリオ表示を確認
+- Playwrightスクリーンショット画素確認: desktop `nonDarkRatio=0.4428`、mobile `nonDarkRatio=0.7713`
+- Playwright console errors: 0件
