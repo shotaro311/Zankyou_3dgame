@@ -43,6 +43,7 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - 各部屋の入口接続領域を広げ、廊下側の床領域と部屋内の床領域が確実につながるようにした。
 - ステージ1のピエロ面の人物を、防音扉のすぐ前ではなく通路奥へ再配置した。
 - ピエロ面を左右非対称に崩し、赤い汚れと斜めの黒い傷を追加して不気味な造形へ調整した。
+- ステージ1のピエロ面の人物をスケール`2.4`から`1.2`へ半分にし、配置を`z=-12.6`から`z=-18`へさらに廊下奥へ移動した。
 
 ## Verification
 
@@ -79,4 +80,7 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - Browser/CDP確認: 廊下からB2-03、機材倉庫、CONTROL B2の各室内までの経路サンプリングがすべて`ok=true`
 - ピエロ面の通路奥再配置後のJavaScript構文チェック: `node --check`でエラーなし
 - Browser確認: 防音扉の小窓越しに人物がドア前ではなく奥側へ下がって見えることをスクリーンショットで確認
+- Browser/CDP確認: 防音扉の開放前は人物表示`visible=true`、開放後は`visible=false`かつ`studioDoorOpen=true`
+- ピエロ面のサイズ縮小・奥配置後のJavaScript構文チェック: `node --check`でエラーなし
+- Browser確認: 防音扉の小窓越しに人物が小さく、さらに奥側に見えることをスクリーンショットで確認
 - Browser/CDP確認: 防音扉の開放前は人物表示`visible=true`、開放後は`visible=false`かつ`studioDoorOpen=true`
