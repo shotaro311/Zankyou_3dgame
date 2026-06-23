@@ -6,6 +6,10 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 
 ## Work
 
+- 冒頭シナリオから「僕は、駅前の小さな音楽教室でドラムを教えている。」を削除した。
+- 防音扉を閉めた後の描写を、現実世界から切り離された違和感と、スタジオに入れた安堵へ差し替えた。
+- `C:\Users\shotaro\Downloads\zankyo-b2-06.html`にも同じ修正を反映した。
+- Downloads版のバックアップとして`C:\Users\shotaro\Downloads\zankyo-b2-06.before-opening-text-20260623.html`を作成した。
 - 調べるモードで、拾得物の取得、文書表示、重要ヒント表示が通常操作と同じように発火するようにした。
 - 意味のない場所でアイテムを使った場合の既定文を、対象名とアイテム名を含む皮肉寄りの複数パターンへ変更した。
 - `C:\Users\shotaro\Downloads\zankyo-b2-06.html`にも同じ修正を反映した。
@@ -46,3 +50,5 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - 調べる動作修正後のJavaScript構文チェック: `index.html` / Downloads版ともに`scripts=1 ok`
 - Playwright代表確認: 調べるで防音ドアのヒント表示、T字ピン取得、非常時案内の文書表示を確認
 - Playwright代表確認: ギターアンプにドラムキーを使った際、皮肉寄りの無効使用セリフを確認
+- 冒頭文修正後のJavaScript構文チェック: `index.html` / Downloads版ともに`scripts=1 ok`
+- Playwright確認: 導入シナリオは9段落になり、削除対象文と旧終端文が表示されないことを確認
