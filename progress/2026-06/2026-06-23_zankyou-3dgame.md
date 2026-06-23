@@ -6,6 +6,12 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 
 ## Work
 
+- 調べるモードの旧定型文を廃止し、各オブジェクト固有の観察文へ差し替えた。
+- 間違ったアイテム使用時の既定文も、対象名とアイテム名を含む文へ変更した。
+- ドラムセットの当たり判定を、バスドラム、スネア、ハイタム、ミッドタム、フロアタム、クラッシュ、ライド、ハイハットへ分割した。
+- ドラムスティック使用時に、各ドラム・シンバルで異なる説明文と合成打音を出すようにした。
+- `C:\Users\shotaro\Downloads\zankyo-b2-06.html`にも同じ修正を反映した。
+- Downloads版のバックアップとして`C:\Users\shotaro\Downloads\zankyo-b2-06.before-object-inspect-20260623.html`を作成した。
 - WASD移動がマウス視点方向に対して崩れる問題を修正した。
 - セリフ表示時間を一律で約3秒延長した。
 - 停電復旧後のセリフから「五秒……。」を削除した。
@@ -27,7 +33,9 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - Playwright確認: desktop / mobileで`canvas`を1件検出、開始画面と導入シナリオ表示を確認
 - Playwrightスクリーンショット画素確認: desktop `nonDarkRatio=0.4428`、mobile `nonDarkRatio=0.7713`
 - Playwright console errors: 0件
-- 修正後のJavaScript構文チェック: `index.html` / Downloads版ともに`scripts=1 ok`
+- オブジェクト文言修正後のJavaScript構文チェック: `index.html` / Downloads版ともに`scripts=1 ok`
 - 移動ベクトル確認: 正面Wは`z=-1`、正面Sは`z=1`、右向きWは`x=1`
 - 文言確認: `五秒` / `5秒`はリポジトリ版とDownloads版の両方で不在
 - Playwrightローカル確認: 開始画面、導入シナリオ、停電中セリフを確認。console errorsは0件
+- Playwright代表確認: ギターアンプ、受付、バスドラムの調べる文と、バスドラム、ハイタム、クラッシュの打音分岐を確認
+- 全51インタラクションID確認: 旧定型文の表示は0件、console errorsは0件
