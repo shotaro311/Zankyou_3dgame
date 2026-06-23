@@ -31,6 +31,12 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - 機密情報をコミットしないための`.gitignore`を追加した。
 - GitHubリポジトリ`shotaro311/Zankyou_3dgame`を作成した。
 - `main`ブランチ直下からGitHub Pagesを有効化した。
+- ステージ2のB2-03、機材倉庫、CONTROL B2の入口で、廊下側と部屋側の通行可能領域に小さな隙間があり、見えない壁のように止まる問題を修正した。
+- 各部屋のドア開口部だけに通行可能な接続領域を追加し、壁全体を通り抜けられないようにした。
+- ブラウザ検証時にポインターロックが失敗した場合、Chromium側の不要なコンソールエラーが残らないようにした。
+- ステージ1の防音扉の小窓越しに、廊下奥のピエロ面の人物が見えるようにした。
+- 防音扉本体を小窓のある分割形状にし、閉じている状態でも廊下奥が見えるようにした。
+- 防音扉が開いた瞬間に、廊下奥の人物を即時非表示にするようにした。
 
 ## Verification
 
@@ -52,3 +58,10 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - Playwright代表確認: ギターアンプにドラムキーを使った際、皮肉寄りの無効使用セリフを確認
 - 冒頭文修正後のJavaScript構文チェック: `index.html` / Downloads版ともに`scripts=1 ok`
 - Playwright確認: 導入シナリオは9段落になり、削除対象文と旧終端文が表示されないことを確認
+- ステージ2通行判定の静的シミュレーション: B2-03のマイクスタンド部屋、機材倉庫、CONTROL B2のLAST TAKE接近位置、B1階段への通路が通行可能であることを確認
+- `index.html`内のJavaScript構文チェック: `index.html script syntax OK`
+- Browser確認: `http://127.0.0.1:4173/index.html?test&fresh=1`で開始画面とゲーム開始後のSTAGE 1表示を確認
+- Browser/CDP確認: `window.__gameTest`で布テープ、T字ピン、ブームアーム、クランプ、XLR、空リール、LAST TAKEを取得し、防火シャッターを開けて`stage=3`、`stage3Entered=true`まで進行確認
+- ピエロ面演出追加後のJavaScript構文チェック: `node --check`でエラーなし
+- Browser/CDP確認: 防音扉の開放前は`doorOpen=false`かつ人物表示`visible=true`、開放後は`doorOpen=true`かつ人物表示`visible=false`
+- Browser確認: 扉開放前後のスクリーンショットを確認し、console warnings/errorsは0件
