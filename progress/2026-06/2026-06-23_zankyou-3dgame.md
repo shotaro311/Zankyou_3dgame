@@ -37,6 +37,8 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - ステージ1の防音扉の小窓越しに、廊下奥のピエロ面の人物が見えるようにした。
 - 防音扉本体を小窓のある分割形状にし、閉じている状態でも廊下奥が見えるようにした。
 - 防音扉が開いた瞬間に、廊下奥の人物を即時非表示にするようにした。
+- ピエロ面の人物を、防音扉左の縦隙間から見える位置へ再配置した。
+- 最初の停電が発生するまでの待機時間を4秒延長した。
 
 ## Verification
 
@@ -65,3 +67,5 @@ GitHub Pagesで公開するため、修正済みHTMLゲームを`C:\Users\shotar
 - ピエロ面演出追加後のJavaScript構文チェック: `node --check`でエラーなし
 - Browser/CDP確認: 防音扉の開放前は`doorOpen=false`かつ人物表示`visible=true`、開放後は`doorOpen=true`かつ人物表示`visible=false`
 - Browser確認: 扉開放前後のスクリーンショットを確認し、console warnings/errorsは0件
+- ピエロ面の再配置後のJavaScript構文チェック: `node --check`でエラーなし
+- Browser確認: 防音扉左の縦隙間にピエロ面の白い面と赤い線が見えることをスクリーンショットで確認
